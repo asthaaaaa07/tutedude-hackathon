@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Deals & Payments - StreetSavvy</title>
+  <link rel="stylesheet" href="tut.css" />
+  <style>
+    .deals-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .glass-card {
+      max-width: 700px;
+      padding: 2rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      box-shadow: 0 0 10px rgba(0, 255, 209, 0.2);
+    }
+
+    .glass-card h2 {
+      color: #00ffd1;
+      margin-bottom: 1rem;
+    }
+
+    .glass-card ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    .glass-card ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .btn-secure {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #00ffd1;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-secure:hover {
+      background: #00c4a0;
+    }
+  </style>
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">StreetSavvy</div>
+     <nav class="nav-links">
+    <a href="tut.html">Home</a>
+    <a href="vendors.html">Vendors</a>
+    <a href="deals.html">Deals</a>
+    <a href="filters.html">Filter</a>
+    <a href="requirements.html">Post Requirement</a>
+    <div class="dropdown">
+  <a href="#">Payments ▾</a>
+  <div class="dropdown-content">
+    <a href="payment.html">Online Payment</a>
+    <a href="cod.html">Cash on Delivery</a>
+  </div>
+</div>
+
+  </nav>
+  </header>
+
+  <div class="deals-container">
+    <div class="glass-card">
+      <h2>Secure Deals & Payments</h2>
+      <p>Negotiate, finalize, and transact safely with our integrated platform:</p>
+      <ul>
+        <li><strong>Escrow Option:</strong> Ensure both vendor and buyer are protected.</li>
+        <li><strong>Digital Contracts:</strong> Auto-generated upon deal finalization.</li>
+        <li><strong>Transparent History:</strong> Access to all past deals and ratings.</li>
+        <li><strong>Fraud Prevention:</strong> Vendors pass KYC & fraud-check filters.</li>
+        <li><strong>Instant Notifications:</strong> Get alerts on every transaction step.</li>
+      </ul>
+     <button id="secureDealBtn" class="btn-secure">Start a Secure Deal</button>
+
+
+     
+    </div>
+  </div>
+  <script>
+  document.getElementById("secureDealBtn").addEventListener("click", function() {
+    window.location.href = "payment.html";
+  });
+</script>
+
+</body>
+</html>

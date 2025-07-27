@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000000, #001d1a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  color: #00ffd1;
+  margin-bottom: 2rem;
+}
+
+.material-table {
+  width: 90%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00ffd1;
+}
+
+.material-table th, .material-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.material-table th {
+  background-color: #00ffd110;
+  color: #00ffd1;
+}
+
+.material-table tr:hover {
+  background-color: rgba(0, 255, 209, 0.05);
+}

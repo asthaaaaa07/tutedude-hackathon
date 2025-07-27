@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post Requirements | StreetSavvy</title>
+  <link rel="stylesheet" href="requirements.css">
+   <link rel="stylesheet" href="tut.css" />
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">StreetSavvy</div>
+     <nav class="nav-links">
+    <a href="tut.html">Home</a>
+    <a href="vendors.html">Vendors</a>
+    <a href="deals.html">Deals</a>
+    <a href="filters.html">Filter</a>
+    <a href="requirements.html">Post Requirement</a>
+    <div class="dropdown">
+  <a href="#">Payments ▾</a>
+  <div class="dropdown-content">
+    <a href="payment.html">Online Payment</a>
+    <a href="cod.html">Cash on Delivery</a>
+  </div>
+</div>
+
+  </nav>
+  </header>
+<!-- Navbar End -->
+  <div class="container">
+    <h1>Post Your Requirement</h1>
+    <p>Looking for vendors, materials, or services? Submit your need and get quick responses from verified suppliers.</p>
+
+    <form id="requirementForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="contact">Contact Number</label>
+      <input type="tel" id="contact" name="contact" required />
+
+      <label for="city">City</label>
+      <select id="city" name="city" required>
+        <option value="">-- Select City --</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Bengaluru">Bengaluru</option>
+      </select>
+
+      <label for="requirement">Requirement Details</label>
+      <textarea id="requirement" name="requirement" placeholder="e.g., Need 50 kg rice weekly, or looking for affordable food stall setup..." required></textarea>
+
+      <button type="submit">Submit Requirement</button>
+    </form>
+  </div>
+
+  <script src="requirements.js"></script>
+</body>
+</html>

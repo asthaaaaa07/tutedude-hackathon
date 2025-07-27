@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Payment - StreetSavvy</title>
+  <link rel="stylesheet" href="tut.css" />
+  <style>
+    .payment-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 2rem;
+    }
+
+    .payment-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 255, 209, 0.15);
+      color: white;
+    }
+
+    .payment-card h2 {
+      text-align: center;
+      color: #00ffd1;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .form-group input::placeholder {
+      color: #aaa;
+    }
+
+    .pay-btn {
+      width: 100%;
+      padding: 1rem;
+      background-color: #00ffd1;
+      color: black;
+      border: none;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .pay-btn:hover {
+      background-color: #00c4a0;
+    }
+  </style>
+</head>
+<body>
+   
+   <header class="navbar">
+    <div class="logo">StreetSavvy</div>
+     <nav class="nav-links">
+    <a href="tut.html">Home</a>
+    <a href="vendors.html">Vendors</a>
+    <a href="deals.html">Deals</a>
+    <a href="filters.html">Filter</a>
+    <a href="requirements.html">Post Requirement</a>
+    <div class="dropdown">
+  <a href="#">Payments ▾</a>
+  <div class="dropdown-content">
+    <a href="payment.html">Online Payment</a>
+    <a href="cod.html">Cash on Delivery</a>
+  </div>
+</div>
+
+  </nav>
+  </header>
+<!-- Navbar End -->
+  <div class="payment-container">
+    <div class="payment-card">
+      <h2>Complete Your Payment</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" required />
+        </div>
+
+        <div class="form-group">
+          <label for="card">Card Number</label>
+          <input type="text" id="card" placeholder="1234 5678 9012 3456" required />
+        </div>
+
+        <div class="form-group">
+          <label for="expiry">Expiry Date</label>
+          <input type="text" id="expiry" placeholder="MM/YY" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="password" id="cvv" placeholder="123" required />
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount (INR)</label>
+          <input type="number" id="amount" placeholder="Enter amount" required />
+        </div>
+
+        <button class="pay-btn" type="submit">Pay Securely</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

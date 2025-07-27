@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vendor Swipe Cards</title>
+  <link rel="stylesheet" href="vendors.css" />
+ 
+<body>
+    <header class="navbar">
+  <div class="logo">
+   
+    <span>StreetSavvy</span>
+  </div>
+  <nav class="nav-links">
+    <a href="tut.html">Home</a>
+    <a href="vendors.html">Vendors</a>
+    <a href="deals.html">Deals</a>
+    <a href="filters.html">Filter</a>
+    <a href="requirements.html">Post Requirement</a>
+    <div class="dropdown">
+  <a href="#">Payments ▾</a>
+  <div class="dropdown-content">
+    <a href="payment.html">Online Payment</a>
+    <a href="cod.html">Cash on Delivery</a>
+  </div>
+</div>
+
+  </nav>
+</header>
+<!-- Navbar End -->
+  <section class="swipe-section">
+    <h2>Find Your Perfect Vendor Match</h2>
+    <!-- Search & Filter UI -->
+<div class="filter-bar">
+  <input type="text" id="searchInput" placeholder="Search vendor by name..." />
+  <select id="cityFilter">
+    <option value="all">All Cities</option>
+    <option value="Pune">Pune</option>
+    <option value="Nagpur">Nagpur</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Nashik">Nashik</option>
+    <option value="Kolhapur">Kolhapur</option>
+    <option value="Aurangabad">Aurangabad</option>
+    <option value="Thane">Thane</option>
+    <option value="Solapur">Solapur</option>
+  </select>
+</div>
+
+    <div class="card-container" id="card-container">
+      <!-- Cards injected by JS -->
+    </div>
+    <div class="buttons">
+      <button id="dislike">&#10060;</button>
+      <button id="like">&#10084;</button>
+    </div>
+  </section>
+
+  <script src="vendors.js"></script>
+</body>
+</html>

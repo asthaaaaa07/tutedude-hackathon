@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Success - StreetSavvy</title>
+  <link rel="stylesheet" href="tut.css" />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.9), #111);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .success-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      padding: 3rem 2.5rem;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 0 20px rgba(0, 255, 209, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .success-card h1 {
+      font-size: 2rem;
+      color: #00ffd1;
+      margin-bottom: 1rem;
+    }
+
+    .success-card p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .checkmark {
+      font-size: 4rem;
+      color: #00ffd1;
+      margin-bottom: 1rem;
+      animation: pop 0.4s ease-out;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .btn-home {
+      padding: 0.8rem 1.5rem;
+      background-color: #00ffd1;
+      color: black;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-home:hover {
+      background-color: #00c4a0;
+    }
+  </style>
+</head>
+<body>
+   
+ <header class="navbar">
+    <div class="logo">StreetSavvy</div>
+     <nav class="nav-links">
+    <a href="tut.html">Home</a>
+    <a href="vendors.html">Vendors</a>
+    <a href="deals.html">Deals</a>
+    <a href="filters.html">Filter</a>
+    <a href="requirements.html">Post Requirement</a>
+    <div class="dropdown">
+  <a href="#">Payments ▾</a>
+  <div class="dropdown-content">
+    <a href="payment.html">Online Payment</a>
+    <a href="cod.html">Cash on Delivery</a>
+  </div>
+</div>
+
+  </nav>
+  </header>
+<!-- Navbar End -->
+  <div class="success-card">
+    <div class="checkmark">✔</div>
+    <h1>Payment Successful!</h1>
+    <p>Thank you for your purchase. A confirmation email has been sent to your registered address.</p>
+    <a href="tut.html" class="btn-home">Go to Homepage</a>
+  </div>
+</body>
+</html>
